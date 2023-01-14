@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Área e Perímetro da Cincunferência</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+            var raio = parseFloat(document.getElementById('raio').value);
+            var perimetro = parseFloat(2*3.14*raio);
+            var area = parseFloat(3.14*raio**2)
+            alert('O perímetro é: '+perimetro+'\nA área é: '+area); //O \n faz o breakline 
+        }
+    </script>
+    <h1>Calculadora de Perímetro e Área</h1>
+    <hr>
+    <form action="">
+        Digite o raio da cincunferência: <br>
+        <input type="text" name="" id="raio"> <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+    </form>    
+</body>
+</html>

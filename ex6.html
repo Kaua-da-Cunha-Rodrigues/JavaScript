@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        function enviar(){
+            var quantidade = parseFloat(document.getElementById('quantidade').value); //criamos uma variável que pega o valor da quantidade a partir do 'ID' colocado no html
+            var valor = parseFloat(document.getElementById('valor').value);
+            var valorTotal = quantidade * valor;
+            alert('O valor total é: '+valorTotal); //+ pra concatenar
+        }
+    </script>
+    <form action="">
+        <h1>Impressão --</h1>
+        <hr>
+        Quantidade:
+        <input type="text" name="" id="quantidade"> <!--Js usa mais o "id" do que o "name"-->
+        Valor Unitário:
+        <input type="text" name="" id="valor">
+        <br> <br>
+        <button onclick="enviar()">Calcular</button>
+    </form>    
+</body>
+</html>

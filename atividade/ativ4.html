@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posto de Gasolina Virtual</title>
+</head>
+<body>
+    <!-- 
+        20km - 1l
+          1l - 5R$ 
+    -->
+    <h1>Confira os preços</h1>
+    <hr>
+    <ul>
+        <li>Gasolina (Litro): 5R$</li>
+        <li>Kilometro Rodado (por Litro): 20km</li>
+    </ul>
+    <script>
+        function calcular(){
+            var dinheiro = parseFloat(document.getElementById('dinheiro').value);
+            var litros = dinheiro / 5;
+            var km = litros * 20;
+            alert ('Dinheiro Total: '+dinheiro+'\nTotal de Litros: '+litros+'\nTotal de Kilometros: '+km);
+        }
+    </script>
+    <form action="">
+        Digite a quantidade de dinheiro em R$ <br>
+        <input type="text" id="dinheiro"> <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit para Celsius</title>
+</head>
+<body>
+    <script>
+        function converter(){
+            var fahr = parseFloat(document.getElementById('fahr').value);
+            var celsius = parseFloat((fahr-32)/1.8);
+            alert('Em Fahrenheit: '+fahr+'\nEm Celsius: '+celsius);
+        }
+    </script>
+    <h1>Conversor de Temperatura</h1>
+    <hr>
+    <form action="">
+        Digite a temperatura em Fahrenheit: <br>
+        <input type="text" id="fahr"> <br>
+        <br>
+        <button onclick="converter()">Calcular</button>
+    </form>    
+</body>
+</html>
